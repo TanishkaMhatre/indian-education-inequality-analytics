@@ -1,5 +1,5 @@
 🔗 Live Dashboard
-👉 https://indian-education-inequality-analysis-by-tanishkamhatre.streamlit.ap
+👉 https://indian-education-inequality-analysis-by-tanishkamhatre.streamlit.app
 
 
 Indian Education Inequality Analytics 
