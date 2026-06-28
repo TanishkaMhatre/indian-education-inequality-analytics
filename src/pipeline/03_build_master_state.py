@@ -217,7 +217,7 @@ master = master.sort_values("Education_Inequality_Index", ascending=False)
 out_csv = OUT / "master_state_education_inequality.csv"
 master.to_csv(out_csv, index=False)
 
-print("✅ Master dataset created:", out_csv)
+print("Master dataset created:", out_csv)
 print("\nTop 10 worst states by Education_Inequality_Index:")
 print(
     master[[

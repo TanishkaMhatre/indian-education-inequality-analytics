@@ -75,5 +75,5 @@ fig.tight_layout(rect=[0, 0.02, 1, 0.95])
 fig.savefig(OUTDIR / "dashboard_page_2.png", dpi=200)
 plt.close(fig)
 
-print("✅ Dashboards saved to:", OUTDIR)
+print(" Dashboards saved to:", OUTDIR)
 print("Files: dashboard_page_1.png, dashboard_page_2.png")

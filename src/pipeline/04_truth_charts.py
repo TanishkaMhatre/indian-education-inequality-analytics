@@ -39,4 +39,4 @@ bar_top10("Infra_Index",
           "Bottom 10 States by School Infrastructure Index (Internet+Electricity+Library+Handwash)",
           "04_bottom10_infra.png", ascending=True)
 
-print("✅ Charts saved in:", FIG)
+print("Charts saved in:", FIG)

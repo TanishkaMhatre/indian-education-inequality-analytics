@@ -21,7 +21,7 @@ SECONDARY = "#2ca02c"
 ACCENT = "#ff7f0e"
 DANGER = "#d62728"
 
-# ---------- 1️⃣ Horizontal Bar (Better Ranking View) ----------
+# ----------  Horizontal Bar (Better Ranking View) ----------
 top10 = df.sort_values("Education_Inequality_Index", ascending=False).head(10)
 
 plt.figure(figsize=(10,6))
@@ -36,7 +36,7 @@ plt.tight_layout()
 plt.savefig(OUT / "01_horizontal_ranking.png", dpi=200)
 plt.close()
 
-# ---------- 2️⃣ Heatmap (Correlation Analysis) ----------
+# ----------  Heatmap (Correlation Analysis) ----------
 plt.figure(figsize=(10,6))
 corr = df[[
     "Education_Inequality_Index",
@@ -52,7 +52,7 @@ plt.tight_layout()
 plt.savefig(OUT / "02_correlation_heatmap.png", dpi=200)
 plt.close()
 
-# ---------- 3️⃣ Pie Chart (Infrastructure Composition Example) ----------
+# ---------- Pie Chart (Infrastructure Composition Example) ----------
 avg_infra = {
     "Internet": df["Pct_Internet_AllMgmt"].mean(),
     "Electricity": df["Pct_Electricity_AllMgmt"].mean(),
@@ -71,7 +71,7 @@ plt.title("Average School Infrastructure Distribution (All States)")
 plt.savefig(OUT / "03_infrastructure_pie.png", dpi=200)
 plt.close()
 
-# ---------- 4️⃣ Table Export (Professional Ranking Table) ----------
+# ---------- Table Export (Professional Ranking Table) ----------
 ranking_table = df[[
     "State",
     "Education_Inequality_Index",
@@ -82,4 +82,4 @@ ranking_table = df[[
 
 ranking_table.to_csv(OUT / "state_ranking_table.csv", index=False)
 
-print("✅ Advanced dashboards saved to:", OUT)
+print(" Advanced dashboards saved to:", OUT)

@@ -11,7 +11,7 @@ from sklearn.cluster import KMeans
 # ----------------------
 st.set_page_config(
     page_title="Indian Education Inequality Dashboard",
-    page_icon="📊",
+    page_icon="",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -72,7 +72,7 @@ st.markdown(
 # ----------------------
 # Header
 # ----------------------
-st.title("📊 Indian Education Inequality Analytics")
+st.title("Indian Education Inequality Analytics")
 st.markdown(
     "A state-wise analytics dashboard built on UDISE-style education indicators. "
     "Explore inequality through **ranking, drivers, clustering (AI), trends, and tables**."
@@ -169,7 +169,7 @@ with tab2:
     col1, col2 = st.columns(2)
 
     with col1:
-        st.markdown("### 📌 Gender Gap vs Infrastructure")
+        st.markdown("### Gender Gap vs Infrastructure")
         st.write("Do better school facilities correlate with lower literacy gender gaps?")
 
         fig2 = px.scatter(
@@ -188,7 +188,7 @@ with tab2:
         st.plotly_chart(fig2, use_container_width=True)
 
     with col2:
-        st.markdown("### 📌 Transition Loss vs Rural–Urban Divide")
+        st.markdown("### Transition Loss vs Rural–Urban Divide")
         st.write("Do states with higher rural-urban divide show greater transition loss?")
 
         fig3 = px.scatter(
@@ -343,14 +343,14 @@ with tab5:
     colA, colB = st.columns(2)
     with colA:
         st.download_button(
-            "⬇️ Download this table (CSV)",
+            "Download this table (CSV)",
             data=table.to_csv(index=False).encode("utf-8"),
             file_name="ranked_table.csv",
             mime="text/csv"
         )
     with colB:
         st.download_button(
-            "⬇️ Download full master dataset (CSV)",
+            "Download full master dataset (CSV)",
             data=df.to_csv(index=False).encode("utf-8"),
             file_name="master_state_education_inequality.csv",
             mime="text/csv"
@@ -361,7 +361,7 @@ with tab5:
 # ----------------------
 st.markdown("---")
 st.caption(
-    "📊 Indian Education Inequality Analytics Dashboard | "
+    "Indian Education Inequality Analytics Dashboard | "
     "Data Source: UDISE (2015–16) & Infrastructure Trends (2013–2016) | "
     "Developed by Tanishka Dnyaneshwar Mhatre"
 )
